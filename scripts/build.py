@@ -1,7 +1,7 @@
 """Gera o site dummy estático a partir de data/prestadores.json.
 
 Saída (na raiz do repo):
-  /<slug>/index.html              página da busca com tags de prévia (Open Graph)
+  /<slug>.html                    página da busca com tags de prévia (Open Graph)
   /api/prestadores/<slug>.json    "API dummy" — simula GET /prestadores?categoria=<slug>
   /api/categorias.json            simula GET /categorias/
   /og/<slug>.png                  imagem do cartão de prévia (1200x630)
@@ -109,7 +109,7 @@ def page(cat: dict, condominio: str) -> str:
     esc = html.escape
     return PAGE.format(
         title=esc(title), desc=esc(desc), url=f"{BASE_URL}/{cat['slug']}",
-        image=f"{BASE_URL}/og/{cat['slug']}.png", rel="../", slug=cat["slug"],
+        image=f"{BASE_URL}/og/{cat['slug']}.png", rel="./", slug=cat["slug"],
         termo=esc(cat["nome"]), condominio=esc(condominio),
     )
 
@@ -147,6 +147,9 @@ NOT_FOUND = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bem Indicado — busca</title>
+<meta property="og:title" content="Buscar prestadores — Bem Indicado">
+<meta property="og:description" content="Veja quem os vizinhos do Colinas do Paratehy indicam.">
+<meta property="og:image" content="https://tgpmoraes.github.io/bemindicado-dummy/og/encanador.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/bemindicado-dummy/style.css">
 </head>
@@ -178,15 +181,16 @@ def main() -> None:
     items = []
     for cat in data["categorias"]:
         slug = cat["slug"]
-        (ROOT / slug).mkdir(exist_ok=True)
-        (ROOT / slug / "index.html").write_text(page(cat, condominio), encoding="utf-8")
+        # arquivo plano <slug>.html: o GitHub Pages serve /<slug> sem redirecionar
+        # (pasta <slug>/ gera um 301 para /<slug>/, e o WhatsApp não monta a prévia)
+        (ROOT / f"{slug}.html").write_text(page(cat, condominio), encoding="utf-8")
         api = {"categoria": {"slug": slug, "nome": cat["nome"]}, "condominio": condominio,
                "total": len(cat["prestadores"]), "prestadores": cat["prestadores"]}
         (ROOT / "api" / "prestadores" / f"{slug}.json").write_text(
             json.dumps(api, ensure_ascii=False, indent=2), encoding="utf-8")
         og_image(cat, condominio, ROOT / "og" / f"{slug}.png")
         cats_api.append({"slug": slug, "nome": cat["nome"]})
-        items.append(f'<li><a href="./{slug}/">{html.escape(cat["nome"])}</a>'
+        items.append(f'<li><a href="./{slug}">{html.escape(cat["nome"])}</a>'
                      f'<code>/{slug}</code></li>')
 
     (ROOT / "api" / "categorias.json").write_text(

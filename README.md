@@ -7,7 +7,7 @@ Todos os prestadores são **fictícios**.
 
 - `data/prestadores.json` — dados de entrada
 - `api/prestadores/<slug>.json` — "API dummy" (simula `GET /prestadores?categoria=<slug>`)
-- `<slug>/index.html` — página com tags Open Graph (título, descrição, imagem)
+- `<slug>.html` — página com tags Open Graph (título, descrição, imagem)
 - `og/<slug>.png` — imagem do cartão (1200×630)
 
 Regerar após editar os dados:
