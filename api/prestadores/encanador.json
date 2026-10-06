@@ -1,0 +1,34 @@
+{
+  "categoria": {
+    "slug": "encanador",
+    "nome": "Encanador"
+  },
+  "condominio": "Colinas do Paratehy",
+  "total": 3,
+  "prestadores": [
+    {
+      "nome": "Marcos Hidráulica",
+      "descricao": "Vazamentos, troca de registros e limpeza de caixa d’água.",
+      "telefone": "+5512900000101",
+      "nota": 4.8,
+      "avaliacoes": 12,
+      "recomendam_pct": 100
+    },
+    {
+      "nome": "João Encanamentos",
+      "descricao": "Desentupimento e instalação de aquecedor.",
+      "telefone": "+5512900000102",
+      "nota": 4.5,
+      "avaliacoes": 6,
+      "recomendam_pct": 83
+    },
+    {
+      "nome": "Reparos Silva",
+      "descricao": "Pequenos reparos hidráulicos.",
+      "telefone": "+5512900000103",
+      "nota": null,
+      "avaliacoes": 0,
+      "recomendam_pct": null
+    }
+  ]
+}

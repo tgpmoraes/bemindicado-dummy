@@ -1,0 +1,27 @@
+{
+  "condominio": "Colinas do Paratehy",
+  "categorias": [
+    {"slug": "encanador", "nome": "Encanador", "plural": "Encanadores", "prestadores": [
+      {"nome": "Marcos Hidráulica", "descricao": "Vazamentos, troca de registros e limpeza de caixa d’água.", "telefone": "+5512900000101", "nota": 4.8, "avaliacoes": 12, "recomendam_pct": 100},
+      {"nome": "João Encanamentos", "descricao": "Desentupimento e instalação de aquecedor.", "telefone": "+5512900000102", "nota": 4.5, "avaliacoes": 6, "recomendam_pct": 83},
+      {"nome": "Reparos Silva", "descricao": "Pequenos reparos hidráulicos.", "telefone": "+5512900000103", "nota": null, "avaliacoes": 0, "recomendam_pct": null}
+    ]},
+    {"slug": "eletricista", "nome": "Eletricista", "plural": "Eletricistas", "prestadores": [
+      {"nome": "Luz Certa Elétrica", "descricao": "Quadros de energia, tomadas e iluminação.", "telefone": "+5512900000201", "nota": 4.9, "avaliacoes": 9, "recomendam_pct": 100},
+      {"nome": "Carlos Eletricista", "descricao": "Instalação de chuveiro e ventilador de teto.", "telefone": "+5512900000202", "nota": 4.3, "avaliacoes": 4, "recomendam_pct": 75},
+      {"nome": "Fios & Cia", "descricao": "Manutenção elétrica residencial.", "telefone": "+5512900000203", "nota": null, "avaliacoes": 0, "recomendam_pct": null}
+    ]},
+    {"slug": "diarista", "nome": "Diarista", "plural": "Diaristas", "prestadores": [
+      {"nome": "Ana Diarista", "descricao": "Limpeza completa, segunda a sexta.", "telefone": "+5512900000301", "nota": 5.0, "avaliacoes": 15, "recomendam_pct": 100},
+      {"nome": "Rosa Limpezas", "descricao": "Limpeza pós-obra e passadoria.", "telefone": "+5512900000302", "nota": 4.6, "avaliacoes": 7, "recomendam_pct": 86}
+    ]},
+    {"slug": "pintor", "nome": "Pintor", "plural": "Pintores", "prestadores": [
+      {"nome": "Pinturas Oliveira", "descricao": "Pintura interna, externa e textura.", "telefone": "+5512900000401", "nota": 4.7, "avaliacoes": 5, "recomendam_pct": 100},
+      {"nome": "Renova Pintor", "descricao": "Pintura de portões e grades.", "telefone": "+5512900000402", "nota": null, "avaliacoes": 0, "recomendam_pct": null}
+    ]},
+    {"slug": "jardineiro", "nome": "Jardineiro", "plural": "Jardineiros", "prestadores": [
+      {"nome": "Verde Vivo Jardinagem", "descricao": "Poda, grama e manutenção mensal.", "telefone": "+5512900000501", "nota": 4.8, "avaliacoes": 8, "recomendam_pct": 100},
+      {"nome": "Seu Zé Jardins", "descricao": "Corte de grama e limpeza de terreno.", "telefone": "+5512900000502", "nota": null, "avaliacoes": 0, "recomendam_pct": null}
+    ]}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "categoria": {
+    "slug": "jardineiro",
+    "nome": "Jardineiro"
+  },
+  "condominio": "Colinas do Paratehy",
+  "total": 2,
+  "prestadores": [
+    {
+      "nome": "Verde Vivo Jardinagem",
+      "descricao": "Poda, grama e manutenção mensal.",
+      "telefone": "+5512900000501",
+      "nota": 4.8,
+      "avaliacoes": 8,
+      "recomendam_pct": 100
+    },
+    {
+      "nome": "Seu Zé Jardins",
+      "descricao": "Corte de grama e limpeza de terreno.",
+      "telefone": "+5512900000502",
+      "nota": null,
+      "avaliacoes": 0,
+      "recomendam_pct": null
+    }
+  ]
+}

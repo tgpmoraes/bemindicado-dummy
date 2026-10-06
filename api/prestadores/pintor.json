@@ -1,0 +1,26 @@
+{
+  "categoria": {
+    "slug": "pintor",
+    "nome": "Pintor"
+  },
+  "condominio": "Colinas do Paratehy",
+  "total": 2,
+  "prestadores": [
+    {
+      "nome": "Pinturas Oliveira",
+      "descricao": "Pintura interna, externa e textura.",
+      "telefone": "+5512900000401",
+      "nota": 4.7,
+      "avaliacoes": 5,
+      "recomendam_pct": 100
+    },
+    {
+      "nome": "Renova Pintor",
+      "descricao": "Pintura de portões e grades.",
+      "telefone": "+5512900000402",
+      "nota": null,
+      "avaliacoes": 0,
+      "recomendam_pct": null
+    }
+  ]
+}

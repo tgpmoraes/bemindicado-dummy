@@ -1,0 +1,26 @@
+{
+  "categoria": {
+    "slug": "diarista",
+    "nome": "Diarista"
+  },
+  "condominio": "Colinas do Paratehy",
+  "total": 2,
+  "prestadores": [
+    {
+      "nome": "Ana Diarista",
+      "descricao": "Limpeza completa, segunda a sexta.",
+      "telefone": "+5512900000301",
+      "nota": 5.0,
+      "avaliacoes": 15,
+      "recomendam_pct": 100
+    },
+    {
+      "nome": "Rosa Limpezas",
+      "descricao": "Limpeza pós-obra e passadoria.",
+      "telefone": "+5512900000302",
+      "nota": 4.6,
+      "avaliacoes": 7,
+      "recomendam_pct": 86
+    }
+  ]
+}

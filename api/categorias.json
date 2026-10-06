@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "encanador",
+    "nome": "Encanador"
+  },
+  {
+    "slug": "eletricista",
+    "nome": "Eletricista"
+  },
+  {
+    "slug": "diarista",
+    "nome": "Diarista"
+  },
+  {
+    "slug": "pintor",
+    "nome": "Pintor"
+  },
+  {
+    "slug": "jardineiro",
+    "nome": "Jardineiro"
+  }
+]

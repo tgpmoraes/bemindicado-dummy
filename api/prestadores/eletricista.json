@@ -1,0 +1,34 @@
+{
+  "categoria": {
+    "slug": "eletricista",
+    "nome": "Eletricista"
+  },
+  "condominio": "Colinas do Paratehy",
+  "total": 3,
+  "prestadores": [
+    {
+      "nome": "Luz Certa Elétrica",
+      "descricao": "Quadros de energia, tomadas e iluminação.",
+      "telefone": "+5512900000201",
+      "nota": 4.9,
+      "avaliacoes": 9,
+      "recomendam_pct": 100
+    },
+    {
+      "nome": "Carlos Eletricista",
+      "descricao": "Instalação de chuveiro e ventilador de teto.",
+      "telefone": "+5512900000202",
+      "nota": 4.3,
+      "avaliacoes": 4,
+      "recomendam_pct": 75
+    },
+    {
+      "nome": "Fios & Cia",
+      "descricao": "Manutenção elétrica residencial.",
+      "telefone": "+5512900000203",
+      "nota": null,
+      "avaliacoes": 0,
+      "recomendam_pct": null
+    }
+  ]
+}

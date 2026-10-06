@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bem Indicado — busca</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/bemindicado-dummy/style.css">
+</head>
+<body>
+<header class="top"><a href="/bemindicado-dummy/" class="brand"><span class="mark">BI</span>Bem Indicado</a><span class="tag">teste</span></header>
+<main class="wrap">
+<h1>Buscar prestadores</h1>
+<div class="search"><span id="termo"></span></div>
+<div class="empty">Nenhum prestador encontrado para “<span id="t2"></span>”.<br>Se você conhece um, cadastre e ajude os vizinhos.</div>
+<p class="muted"><a href="/bemindicado-dummy/">Ver categorias disponíveis</a></p>
+</main>
+<script>
+var t = decodeURIComponent(location.pathname.replace(/^\/bemindicado-dummy\//, "").replace(/\/$/, "")).replace(/-/g, " ");
+document.getElementById("termo").textContent = t;
+document.getElementById("t2").textContent = t;
+</script>
+</body>
+</html>
